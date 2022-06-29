@@ -39,3 +39,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
+kafka:
+  bootstrapAddress: http://localhost:9092
+  topic:
+    registration:
+      partition: 8
+      replication: 1
+  group: mail

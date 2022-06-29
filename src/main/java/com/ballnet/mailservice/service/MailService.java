@@ -1,5 +1,6 @@
 package com.ballnet.mailservice.service;
 
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +15,7 @@ import javax.mail.internet.MimeMessage;
 import java.io.File;
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 @Slf4j
 public class MailService implements IMailService{
   private final JavaMailSender emailSender;
